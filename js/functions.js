@@ -2,7 +2,7 @@
 
 let rand_num1 = 0
 let rand_num2 = 0
-let correctAnswer = 0
+let correctAnswers = 0
 let wrongAnswers = 0
 
 const getRandomIntNumberInRange = (min,max) => {
@@ -30,7 +30,7 @@ document.querySelector('button').addEventListener('click', () => {
      const correctAnswer = rand_num1 + rand_num2
      if (answer === correctAnswer){
           alert('Correct!')
-          correctAnswer++;
+          correctAnswers++;
      } else{
           alert('Incorrect!')
           wrongAnswers++;
